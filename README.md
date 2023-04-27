@@ -10,8 +10,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/social-proof-section-using-html5-css-and-flexbox-z-QMFmWdrO)
+- [Live Site URL](https://marilisa-saldanha.github.io/social-proof-section-master/)
 
 ### Built with
 
