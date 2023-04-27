@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+  /* Colors */
+  /* Primary */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  /* Neutral */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  background: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, right 50vw;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.mainTitle {
+  color: var(--very-dark-magenta);
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contentText {
+  color: var(--very-dark-magenta);
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.3rem;
+  padding-bottom: 2.5rem;
+}
+
+.rateContent {
+  padding-bottom: 2.5rem;
+}
+
+.rate {
+  background-color: var(--light-grayish-magenta);
+  border-radius: .7rem;
+  padding: .7rem;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.stars {
+  padding-bottom: .5rem;
+  letter-spacing: .2rem;
+}
+
+.rateText {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.reports {
+  display: flex;
+  flex-direction: column;
+}
+
+.reportCard {
+  background-color: var(--very-dark-magenta);
+  margin-bottom: .7rem;
+  border-radius: .5rem;
+}
+
+.cardContent {
+  padding: 2rem;
+}
+
+.imgReport {
+  border-radius: 50%;
+  width: 45px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  padding-top: .5rem;
+}
+
+.cardContentTop {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1.5rem;
+}
+
+.name {
+  color: var(--white);
+  font-size: .9rem;
+  padding-bottom: .3rem;
+
+}
+
+.buyer {
+  color: var(--soft-pink);
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.imageCard {
+  padding-right: 1rem;
+}
+
+.textContent {
+  color: var(--white);
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 1.3rem;
+}
+
+footer {
+  text-align: center;
+  font-weight: 500;
+  padding: .5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--very-dark-magenta);
+}
+
+@media (min-width: 1350px) {
+  main {
+    background: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+  }
+
+  .container {
+    padding: 5rem 7rem;
+  }
+
+  .topContent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mainText {
+    width: 40%;
+  }
+
+  .mainTitle {
+    text-align: start;
+    font-size: 3.5rem;
+    padding-left: 0;
+    padding-bottom: 2.5rem;
+  }
+
+  .contentText {
+    text-align: start;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .rateContent {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-right: 0;
+    padding-top: 3.5rem;
+    padding-left: 7rem;
+  }
+
+  .rate {
+    width: 65%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .stars {
+    padding-top: .6rem;
+    padding-right: .8rem;
+  }
+
+  .stars img {
+    width: 13%;
+  }
+
+  .rateText {
+    font-size: .97rem;
+  }
+
+  .rate1 {
+    display: flex;
+    justify-content: left;
+  }
+
+  .rate2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .rate3 {
+    display: flex;
+    justify-content: right;
+  }
+  
+  .reports {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .imgReport {
+    width: 50px;
+  }
+
+  .name {
+    font-size: 1rem;
+    padding-bottom: .4rem;
+  
+  }
+  
+  .buyer {
+    font-size: 1rem;
+  }
+
+  .textContent {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .report2 {
+    padding-top: 1rem;
+  }
+
+  .report3 {
+    padding-top: 2rem;
+  }
+}
